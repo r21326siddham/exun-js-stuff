@@ -17,3 +17,10 @@ let chain = function (startingValue, arrayFunc) {
   }
   return startingValue;
 };
+
+//////////////////////////////////////////////////////////OR////////////////////////////////////////////////////////
+
+let funcList = [parseInt(prompt("enter number")),add, mult];
+let result=funcList.reduce(function(total,func){
+    return func(total)})
+console.log(result)
